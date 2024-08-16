@@ -82,7 +82,6 @@ public class ProjectServiceImpl implements ProjectService {
 		projectEmpRepo.deleteById(id);
 		return new ApiResponse("delete emp details from specified project");
 	}
-
 	@Override
 	public ProjectDTO updateProject(Long projectId, @Valid ProjectDTO dto) {
 		// validate if project exists by id
